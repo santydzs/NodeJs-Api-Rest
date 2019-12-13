@@ -1,17 +1,15 @@
 require('./config/config');
-const routes = require('./config/routes');
-const express = require('express');
+const dependecy = require('./config/AppRequires');
+dependecy.Db.conectDb();
 
-const server = express();
-
-server.get(routes.home, function(request, response){
+dependecy.server.get(dependecy.routes.home, function(request, response){
     response.json('server works');
 });
 
-server.get(routes.math.multiply + '/:number', function(request, response){
+dependecy.server.get(dependecy.routes.math.multiply + '/:number', function(request, response){
     response.json(request.params.number * 2);
 });
 
-server.listen(process.env.PORT, function(){
+dependecy.server.listen(process.env.PORT, function(){
     console.log('escuchando en puerto: ' + process.env.PORT);
 })
