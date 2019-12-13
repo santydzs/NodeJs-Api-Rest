@@ -1,3 +1,3 @@
 Udemy: https://www.udemy.com/course/node-de-cero-a-experto/
 
-using mongodb atlas free account, cluster deploy in azure cloud
+using mongoDB Atlas free account, deploy in azure cloud
