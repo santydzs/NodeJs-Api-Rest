@@ -3,5 +3,6 @@ module.exports = {
     home: '/',
     math: {
         multiply: '/multiply'
-    }
+    },
+    phone: '/phone'
 };
