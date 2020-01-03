@@ -1,13 +1,13 @@
-import Routes from './routes';
-import Db from '../Mongo/mongoDriver';
-import express from "express";
 import bodyParser from "body-parser";
+import express from "express";
+import Db from "../Mongo/mongoDriver";
+import Routes from "./routes";
 
 const App = express();
-App.use(bodyParser.json({type: 'application/json'}));
+App.use(bodyParser.json({type: "application/json"}));
 
 export default {
     Routes,
     Db,
-    App
-}
+    App,
+};

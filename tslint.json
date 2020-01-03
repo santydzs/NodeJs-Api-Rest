@@ -1,6 +1,7 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-      "tslint:recommended"
-    ]
-  }
+  "defaultSeverity": "error",
+  "object-literal-sort-keys": false,
+  "extends": [
+    "tslint:recommended"
+  ]
+}

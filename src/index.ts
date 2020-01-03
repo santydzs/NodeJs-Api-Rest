@@ -3,8 +3,7 @@ import app from "./config/middleware";
 const db = new app.Db();
 
 app.App.get(app.Routes.home, function(request, response) {
-    response.json("server works");
-    db.conectDb();
+    response.json("server works and " + db.conectDb());
 });
 
 app.App.get(app.Routes.math.multiply + "/:number", function(request, response) {
@@ -21,6 +20,4 @@ app.App.post(app.Routes.phone, function(request, response) {
     }
 });
 
-app.App.listen(process.env.PORT, function() {
-    console.log("escuchando en puerto: " + process.env.PORT);
-});
+app.App.listen(process.env.PORT);
