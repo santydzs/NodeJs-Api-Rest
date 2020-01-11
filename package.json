@@ -2,7 +2,7 @@
   "name": "restserver",
   "version": "1.0.0",
   "description": "rest del curso de node",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",

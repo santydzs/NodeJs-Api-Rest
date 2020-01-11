@@ -13,14 +13,14 @@ export default class {
     }
 
     public createPhone(input: any) {
-        const _phone = new phoneModel({
+        const phone = new phoneModel({
             Marca: input.marca,
             Modelo: input.modelo,
             Ram: input.ram,
             AndroidVersion: input.version,
         });
 
-        _phone.save( (error: any) => {
+        phone.save( (error: any) => {
             if (error) {
                 throw error;
             }

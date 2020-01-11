@@ -1,10 +1,12 @@
+import PhoneController from "./Controllers/PhoneController";
 import app from "./middleware";
-import phoneController from "./Controllers/PhoneController";
 
-let phoneCrt = new phoneController();
+const phoneCrt = new PhoneController();
 
-app.get('/', function(req, res) {
+app.route("/").get( (req, res) => {
     res.json("server works");
 });
 
-app.route('/phone').get();
+app.route("/phone").get( (req, res) => {
+    return phoneCrt.Add(req);
+});
